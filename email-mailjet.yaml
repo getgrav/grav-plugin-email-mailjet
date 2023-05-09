@@ -1,4 +1,4 @@
 enabled: true
 transport: api
-api_key: cbf9ffe21f3b900dc7f2154e5f025fd8
-secret_key: 7bee8350ba683c81f288b3171b25329c
+api_key:
+secret_key:

@@ -1,7 +1,7 @@
 name: Email Mailjet
 slug: email-mailjet
 type: plugin
-version: 1.0.0
+version: 1.0.1
 description: Mailjet integration for new Email plugin
 icon: envelope
 author:
