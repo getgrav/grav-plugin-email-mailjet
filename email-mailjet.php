@@ -50,8 +50,9 @@ class EmailMailjetPlugin extends Plugin
         $engine = $e['engine'];
         if ($engine === 'mailjet') {
             $options = $this->config->get('plugins.email-mailjet');
-            $dsn = "mailjet+{$options['transport']}://";
-            $dsn .= urlencode($options['api_key']) .":".urlencode($options['secret_key']);
+            $transport = $options['transport'] ?? 'api';
+            $dsn = "mailjet+{$transport}://";
+            $dsn .= urlencode($options['api_key'] ?? '') .":".urlencode($options['secret_key'] ?? '');
             $dsn .= "@default";
             $e['dsn'] = $dsn;
             $e->stopPropagation();
